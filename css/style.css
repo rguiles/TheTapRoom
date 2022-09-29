@@ -1,0 +1,228 @@
+body{
+ background:#fff2;
+}
+
+img{
+ width:auto;
+ box-shadow:0px 0px 20px #cecece;
+ -moz-transform: scale(0.7);
+ -moz-transition-duration: 0.6s; 
+ -webkit-transition-duration: 0.6s;
+ -webkit-transform: scale(0.8);
+ 
+ -ms-transform: scale(0.8);
+ -ms-transition-duration: 0.6s; 
+}
+img:hover{
+  box-shadow: 20px 20px 20px #dcdcdc;
+ -moz-transform: scale(0.8);
+ -moz-transition-duration: 0.6s;
+ -webkit-transition-duration: 0.6s;
+ -webkit-transform: scale(0.9);
+ 
+ -ms-transform: scale(0.9);
+ -ms-transition-duration: 0.6s;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.submit{
+    margin-top:15px;
+}
+.popup-btn a{
+    top: 350px;
+    position:fixed;
+    right:-24px;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    background-color: red;
+    padding:10px 20px 35px;
+    height: 0px;
+    background-color: #000;
+    color:#fff;
+}
+.popup-btn a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.form-part{
+    padding: 20px 0px;
+}
+.modal-header{
+    padding:10px 0px !important;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1 !important; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    width: 80%;
+    padding: 20px;
+    border:3px solid #000 !important;
+}
+.close {
+    position: absolute;
+    right:10px;
+    top:8px;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.thumbnail {
+  object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+  object-position: center; /* Center the image within the element */
+  height: 300px;
+  width: 300px;
+}
+.gallery {
+  text-align: center;
+  display: table;
+}
+/** LIGHTBOX MARKUP **/
+
+h1 {
+	font-family: 'Bebas Neue', cursive;
+}
+h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+.featherlight .featherlight-content {
+	min-width: 500px;
+}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
